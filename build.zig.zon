@@ -1,0 +1,11 @@
+.{
+    .name = .bundler,
+    .version = "0.0.1",
+    .minimum_zig_version = "0.17.0-dev.857+2b2b85c5f",
+    .fingerprint = 0xafa00a0eb4ada142,
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
