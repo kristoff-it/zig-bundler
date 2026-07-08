@@ -2,6 +2,15 @@
 
 Compress and embed asset directories in your Zig executables.
 
+## Features
+
+- Maps a directory structure to a series of Zig decls, avoiding
+  that file names end up in optimized builds.
+- Compressed and extracted sizes are quantities known at comptime.
+- All files are compressed in a single blob.
+- You decide when and if to extract the compressed bundle at
+  runtime.
+
 ## Usage
 ```
 zig fetch --save git+https://github.com/kristoff-it/zig-bundler
@@ -52,9 +61,11 @@ to learn what's in a bundle (or use go to definition in your editor).
 - support for more compression algorithms and provide different trade-offs between size vs
   decompression speed
 
-- ability to iterated the file tree at runtime
+- ability to iterate the file tree at runtime
 
 - ability to toggle things like alignment and null sentinels in each module
+
+- ability to compress and decompress files individually
 
 
 ## Contributing
