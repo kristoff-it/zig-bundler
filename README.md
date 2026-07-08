@@ -4,8 +4,8 @@ Compress and embed asset directories in your Zig executables.
 
 ## Features
 
-- Maps a directory structure to a series of Zig decls, avoiding
-  that file names end up in optimized builds.
+- Maps a directory structure to a series of Zig decls, preventing
+  file names from being included in optimized builds.
 - Compressed and extracted sizes are quantities known at comptime.
 - All files are compressed in a single blob.
 - You decide when and if to extract the compressed bundle at
